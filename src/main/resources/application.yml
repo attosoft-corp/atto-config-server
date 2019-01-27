@@ -1,10 +1,13 @@
 eureka:
   client:
     serviceUrl:
-      defaultZone: http://atto-eureka-server.common.svc:8080/eureka/
+      defaultZone: http://eureka-server.common.svc:8080/eureka/
   instance:
     hostname: atto-eureka-server.common.svc
 
 spring:
   application:
     name: atto-config-server.common.svc
+
+server:
+  port: 8080
